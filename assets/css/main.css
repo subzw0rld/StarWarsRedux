@@ -1,0 +1,153 @@
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+
+/* start commented backslash hack \*/
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+
+/* close commented backslash hack */
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    color: #111;
+    font-size: 1rem;
+    line-height: 1.5;
+    background: #F1F1F1;
+}
+
+html {
+    font-family: sans-serif;
+    /* 1 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+a {
+    color: #0074d9;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0.67rem 0;
+}
+
+input {
+    min-width: 150px;
+    min-height: 32px;
+    border-radius: 4px;
+    border: 1px solid #CCC;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+input[type='text']:hover, input[type='text']:active, input[type='text']:focus, 
+input[type='password']:hover, input[type='password']:active, input[type='password']:focus {
+    -webkit-box-shadow: 0px 1px 15px 0px rgba(0, 171, 194, 0.3);
+    -moz-box-shadow: 0px 1px 15px 0px rgba(0, 171, 194, 0.3);
+    box-shadow: 0px 1px 15px 0px rgba(0, 171, 194, 0.3);
+    outline: none;
+}
+
+input[type="text"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+input[type='submit'] {
+    background: #CC181E;
+    color: #FFF;
+    display: block;
+}
+
+ul {
+    font-size: 0.75rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+
+.wrapper {
+    padding: 2rem;
+    max-width: 1170px;
+    margin: 0 auto;
+    border: 1px solid #CCC;
+    border-bottom: none;
+    background: #FFF;
+    height: 100%;
+}
+
+.login {
+    background: #F1F1F1;
+    border: 1px solid #333;
+    font-size: 0.75rem;
+    float: right;
+    padding: 0.75rem 1.25rem;
+    width: 250px;
+}
+
+label {
+    display: block;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.login input {
+    width: 100%;
+}
+
+.search ul {
+    width: 250px;
+}
+
+.search ul li {
+    border: 1px solid #CCC;
+    padding: 1.3rem 0.3rem;
+    height: 20px;
+}
